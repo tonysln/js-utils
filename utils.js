@@ -49,7 +49,8 @@ const generateElements = (html) => {
   return template.content.children;
 };
 
-const ready = (fn) => {
+
+function ready(fn) {
   if (document.readyState !== 'loading') {
     fn();
   } else {
