@@ -27,7 +27,7 @@ function toggle(el) {
 };
 
 async function getJSON(url) {
-  constresponse = await fetch(url);
+  const response = await fetch(url);
   const data = await response.json();
   return data;
 };
